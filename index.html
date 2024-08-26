@@ -14,12 +14,12 @@
             <div class="cart-header">
                 YAY! It’s BOGO
             </div>
-            <div class="cart-content">
-                <div class="cart-content-off">30%<br>Off</div>
+            <div class="cart-content" id="cart-1-v1">
+                <div class="cart-content-off">40%<br>Off</div>
                 <div class="cart-content-off-right"></div>
                 <div class="cart-content-buy-get">
                     <div>
-                        <input type="radio" id="cart-1" name="offer">
+                        <input type="radio" id="cart-1-v1" name="offer" onclick="if(this.checked){myCart1V1()}">
                     </div>
                     <div class="cart-price">
                         Buy 1 Get 2<br>
@@ -27,12 +27,74 @@
                     </div>
                 </div>
             </div>
-            <div class="cart-content">
-                <div class="cart-content-off">30%<br>Off</div>
+            <div class="cart-content" style="padding: 20px 0px 20px 20px;" id="cart-1-v2">
+                <div class="cart-content-buy-get">
+                    <div style="margin-top: -75px;">
+                        <input type="radio" id="cart-1-v2-check" name="offer">
+                    </div>
+                    <div class="cart-price">
+                        Buy 1 Get 2&nbsp;<span style="font-weight: normal;background-color: #FF6B82;color:#ffffff;padding: 3px;font-size: 10px;border-radius: 2px;margin-left: 5px;">40% Off</span><br>
+                        <span>$18.00 USD&nbsp;&nbsp;<strike style="font-weight: normal;font-size:10px; color:#9f9f9f;">$5.00 USD</strike></span><br/>
+                        <div style="margin-left: -20px;">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td>Size</td>
+                                    <td>Colour</td>
+                                </tr>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-content" id="cart-2-v1">
+                <div class="cart-content-off">20%<br>Off</div>
                 <div class="cart-content-off-right"></div>
                 <div class="cart-content-buy-get">
                     <div>
-                        <input type="radio" id="cart-2" name="offer">
+                        <input type="radio" id="cart-2" name="offer" onclick="if(this.checked){myCart2V1()}">
                     </div>
                     <div class="cart-price">
                         Buy 2 Get 4<br>
@@ -43,12 +105,74 @@
                     </div>
                 </div>
             </div>
-            <div class="cart-content">
-                <div class="cart-content-off">30%<br>Off</div>
+            <div class="cart-content" style="padding: 20px 0px 20px 20px;" id="cart-2-v2">
+                <div class="cart-content-buy-get">
+                    <div style="margin-top: -75px;">
+                        <input type="radio" id="cart-2-v2-check" name="offer">
+                    </div>
+                    <div class="cart-price">
+                        Buy 2 Get 4&nbsp;<span style="font-weight: normal;background-color: #FF6B82;color:#ffffff;padding: 3px;font-size: 10px;border-radius: 2px;margin-left: 5px;">20% Off</span><br>
+                        <span>$24.00 USD&nbsp;&nbsp;<strike style="font-weight: normal;font-size:10px; color:#9f9f9f;">$10.00 USD</strike></span><br/>
+                        <div style="margin-left: -20px;">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td>Size</td>
+                                    <td>Colour</td>
+                                </tr>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-content" id="cart-3-v1">
+                <div class="cart-content-off">10%<br>Off</div>
                 <div class="cart-content-off-right"></div>
                 <div class="cart-content-buy-get">
                     <div>
-                        <input type="radio" id="cart-3" name="offer">
+                        <input type="radio" id="cart-3" name="offer" onclick="if(this.checked){myCart3V1()}">
                     </div>
                     <div class="cart-price">
                         Buy 3 Get 6<br>
@@ -56,6 +180,79 @@
                     </div>
                 </div>
             </div>
+            <div class="cart-content" style="padding: 20px 0px 20px 20px;" id="cart-3-v2">
+                <div class="cart-content-buy-get">
+                    <div style="margin-top: -75px;">
+                        <input type="radio" id="cart-3-v2-check" name="offer">
+                    </div>
+                    <div class="cart-price">
+                        Buy 3 Get 6&nbsp;<span style="font-weight: normal;background-color: #FF6B82;color:#ffffff;padding: 3px;font-size: 10px;border-radius: 2px;margin-left: 5px;">10% Off</span><br>
+                        <span>$36.00 USD&nbsp;&nbsp;<strike style="font-weight: normal;font-size:10px; color:#9f9f9f;">$20.00 USD</strike></span><br/>
+                        <div style="margin-left: -20px;">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td>Size</td>
+                                    <td>Colour</td>
+                                </tr>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>S</option>
+                                            <option>M</option>
+                                            <option>L</option>
+                                            <option>XL</option>
+                                            <option>XXL</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="padding: 5px; width: 70px; border-radius: 0;">
+                                            <option>Red</option>
+                                            <option>Green</option>
+                                            <option>Blue</option>
+                                            <option>Black</option>
+                                            <option>Yellow</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <div><span>Free Delivery</span></div>
+                <div class="cart-total-price">Total : $18.00 USD</div>
+            </div>
+            <div class="cart-button">
+                <button>+ Add to Cart</button>
+            </div>
+            <div class="cart-footer">
+                <p>Powered by <span>Pumper</span></p>
+            </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>

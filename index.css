@@ -10,7 +10,7 @@ body {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    margin: 5% 20% 0% 20%;
+    margin: 2% 20% 0% 20%;
     padding: 3%;
     flex-direction: column;
     line-height: 25.51px;
@@ -44,7 +44,7 @@ body {
     margin-left: -1px;
 }
 .cart-content-buy-get {
-    margin: 10px;
+    margin-left: 10px;
     font-size: 14.46px;
     display: flex;
     flex-direction: row;
@@ -53,6 +53,9 @@ body {
 }
 input[type="radio"] {
     accent-color: #FF0000;
+}
+input:checked {
+    background-color: #FF6B82;
 }
 .cart-price {
     margin-left: 10px;
@@ -65,8 +68,87 @@ input[type="radio"] {
     font-size: 16.92px;
     margin-left: 220px;
 }
+.cart-total {
+    font-size: 12px;
+    display: flex;
+    flex: row;
+    margin: 5px 0px 15px 50px;
+}
+.cart-total span {
+    color: #FF6B82;
+}
+.cart-total-price {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.cart-button {
+    margin: 0px 50px 0px 50px;
+}
+.cart-button button{
+    padding: 10px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    background-color: #FF6B82;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.cart-footer {
+    margin-top: 10px;
+}
+.cart-footer p {
+    text-align: center;
+}
+.cart-footer p span {
+    font-weight: bold;
+    color: #FF6B82;
+}
+#cart-1-v2, #cart-2-v2, #cart-3-v2 {
+    display: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cart-content {
+        margin: 15px 30px 15px 30px;
+    }
+    .cart-content-buy-get {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .cart-price {
+        margin-left: 15px;
+    }
+    .cart-most-popular {
+        font-size: 10px;
+        margin-left: 80px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cart-content {
+        margin: 15px 30px 15px 30px;
+    }
+    .cart-content-buy-get {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .cart-price {
+        margin-left: 20px;
+    }
+    .cart-most-popular {
+        margin-left: 100px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cart-most-popular {
+        margin-left: 180px;
+    }
+}
 @media screen and (max-width: 992px) {
-  .cart-main {
+    .cart-main {
         margin: 5% 8% 0% 8%;
         padding: 2%;
     }

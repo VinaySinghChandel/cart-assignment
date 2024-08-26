@@ -44,7 +44,7 @@ body {
     margin-left: -1px;
 }
 .cart-content-buy-get {
-    margin: 0px 0px 0px 10px;
+    margin: 10px;
     font-size: 14.46px;
     display: flex;
     flex-direction: row;
